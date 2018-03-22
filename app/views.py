@@ -7,14 +7,11 @@ This file creates your application.
 
 from app import app, db
 from flask import render_template, request, redirect, url_for, flash, jsonify
-
 from models import UserProfile
 from werkzeug.security import check_password_hash
-
-from werkzeug.utils import secure_filename
 from forms import MyForm
+from werkzeug.utils import secure_filename
 import os, datetime
-
 ###
 # Routing for your application.
 ###
